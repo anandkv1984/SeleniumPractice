@@ -4,16 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class HomePageTest {
+import com.qa.pages.BasePage;
+
+public class HomePageTest extends BasePage {
 	
 	@Test
 	public void googleLaunchTest(){
-		
-		WebDriver driver;
-		System.setProperty("windows.chrome.driver","drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		
 		driver.get("https://www.google.com");
+		System.out.println(driver.getTitle());
 		
 		
 	}
