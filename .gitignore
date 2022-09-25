@@ -3,6 +3,5 @@
 .classpath
 .settings
 target/*
-test-output
-target/
-screenshots/
+test-output/*
+screenshots/*
