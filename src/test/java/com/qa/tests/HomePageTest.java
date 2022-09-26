@@ -3,13 +3,10 @@ package com.qa.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.pages.BasePage;
-import com.qa.utils.ScreenshotCaptureListener;
 
-@Listeners(ScreenshotCaptureListener.class)
 public class HomePageTest extends BasePage {
 	
 	@Test
@@ -22,7 +19,6 @@ public class HomePageTest extends BasePage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Assert.assertTrue(false);
 	}
 	
 	@Test
@@ -39,8 +35,6 @@ public class HomePageTest extends BasePage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//txtSearch.submit();
-		Assert.assertTrue(false);
-		
+		//txtSearch.submit();	
 	}
 }

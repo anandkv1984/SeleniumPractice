@@ -28,7 +28,7 @@ public class ScreenshotCaptureListener extends BasePage implements ITestListener
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Failed test case");
+		System.out.println("Failed test case - Captured screenshot");
 		failed(result.getMethod().getMethodName());
 		
 	}
